@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+      - mariadb
+      - redis
+    networks:
+      - lucas-net
+
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - lucas-net
+
+  mariadb:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      # Senha de root apenas para ambiente local de desenvolvimento, nunca usar em produção.
+      MARIADB_ROOT_PASSWORD: rootlocal
+      MARIADB_DATABASE: fatec_iot
+      MARIADB_USER: lucas
+      MARIADB_PASSWORD: changeme
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb-data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+    networks:
+      - lucas-net
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - lucas-net
+
+volumes:
+  mongo-data:
+  mariadb-data:
+  redis-data:
+
+networks:
+  lucas-net:
+    driver: bridge

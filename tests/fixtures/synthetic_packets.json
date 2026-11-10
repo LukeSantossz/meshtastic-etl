@@ -1,0 +1,223 @@
+[
+  {
+    "topic": "msh/US/2/json/LongFast/!8fa724e8",
+    "payload": "{\"sender\":\"!8fa724e8\",\"type\":\"env_metrics\",\"payload\":{\"temperature\":24.5,\"relative_humidity\":61.2},\"timestamp\":1767268800,\"id\":1001}",
+    "payload_data": {
+      "sender": "!8fa724e8",
+      "type": "env_metrics",
+      "payload": {
+        "temperature": 24.5,
+        "relative_humidity": 61.2
+      },
+      "timestamp": 1767268800,
+      "id": 1001
+    },
+    "received_at": "2026-01-01T12:00:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!aabbcc01",
+    "payload": "{\"sender\":\"!aabbcc01\",\"type\":\"env_metrics\",\"payload\":{\"temperature\":19.8,\"relative_humidity\":55.0},\"timestamp\":1767268860,\"id\":1002}",
+    "payload_data": {
+      "sender": "!aabbcc01",
+      "type": "env_metrics",
+      "payload": {
+        "temperature": 19.8,
+        "relative_humidity": 55.0
+      },
+      "timestamp": 1767268860,
+      "id": 1002
+    },
+    "received_at": "2026-01-01T12:01:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!8fa724e8",
+    "payload": "{\"sender\":\"!8fa724e8\",\"type\":\"telemetry\",\"payload\":{\"battery_level\":87,\"voltage\":4.01,\"channel_utilization\":12.3,\"air_util_tx\":3.1,\"uptime_seconds\":360000},\"timestamp\":1767268920,\"id\":1003}",
+    "payload_data": {
+      "sender": "!8fa724e8",
+      "type": "telemetry",
+      "payload": {
+        "battery_level": 87,
+        "voltage": 4.01,
+        "channel_utilization": 12.3,
+        "air_util_tx": 3.1,
+        "uptime_seconds": 360000
+      },
+      "timestamp": 1767268920,
+      "id": 1003
+    },
+    "received_at": "2026-01-01T12:02:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!8fa724e8",
+    "payload": "{\"sender\":\"!8fa724e8\",\"type\":\"telemetry\",\"payload\":{\"battery_level\":87,\"voltage\":4.01,\"channel_utilization\":12.3,\"air_util_tx\":3.1,\"uptime_seconds\":360000},\"timestamp\":1767268920,\"id\":1003}",
+    "payload_data": {
+      "sender": "!8fa724e8",
+      "type": "telemetry",
+      "payload": {
+        "battery_level": 87,
+        "voltage": 4.01,
+        "channel_utilization": 12.3,
+        "air_util_tx": 3.1,
+        "uptime_seconds": 360000
+      },
+      "timestamp": 1767268920,
+      "id": 1003
+    },
+    "received_at": "2026-01-01T12:02:05Z",
+    "_nota_sintetica": "duplicata intencional do pacote id=1003 do mesmo sender (mesmo sender+id), usada para testar deduplicacao"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!aabbcc01",
+    "payload": "{\"sender\":\"!aabbcc01\",\"type\":\"telemetry\",\"payload\":{\"battery_level\":42,\"voltage\":3.71,\"channel_utilization\":8.9,\"air_util_tx\":1.2,\"uptime_seconds\":120000},\"timestamp\":1767268980,\"id\":1004}",
+    "payload_data": {
+      "sender": "!aabbcc01",
+      "type": "telemetry",
+      "payload": {
+        "battery_level": 42,
+        "voltage": 3.71,
+        "channel_utilization": 8.9,
+        "air_util_tx": 1.2,
+        "uptime_seconds": 120000
+      },
+      "timestamp": 1767268980,
+      "id": 1004
+    },
+    "received_at": "2026-01-01T12:03:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!8fa724e8",
+    "payload": "{\"sender\":\"!8fa724e8\",\"type\":\"position\",\"payload\":{\"latitude_i\":-233550000,\"longitude_i\":-466330000,\"altitude\":760},\"timestamp\":1767269040,\"id\":1005}",
+    "payload_data": {
+      "sender": "!8fa724e8",
+      "type": "position",
+      "payload": {
+        "latitude_i": -233550000,
+        "longitude_i": -466330000,
+        "altitude": 760
+      },
+      "timestamp": 1767269040,
+      "id": 1005
+    },
+    "received_at": "2026-01-01T12:04:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!aabbcc01",
+    "payload": "{\"sender\":\"!aabbcc01\",\"type\":\"position\",\"payload\":{\"latitude_i\":-233561000,\"longitude_i\":-466341000,\"altitude\":745},\"timestamp\":1767269100,\"id\":1006}",
+    "payload_data": {
+      "sender": "!aabbcc01",
+      "type": "position",
+      "payload": {
+        "latitude_i": -233561000,
+        "longitude_i": -466341000,
+        "altitude": 745
+      },
+      "timestamp": 1767269100,
+      "id": 1006
+    },
+    "received_at": "2026-01-01T12:05:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!8fa724e8",
+    "payload": "{\"sender\":\"!8fa724e8\",\"type\":\"text\",\"payload\":\"Teste de mensagem de texto sintetica\",\"timestamp\":1767269160,\"id\":1007}",
+    "payload_data": {
+      "sender": "!8fa724e8",
+      "type": "text",
+      "payload": "Teste de mensagem de texto sintetica",
+      "timestamp": 1767269160,
+      "id": 1007
+    },
+    "received_at": "2026-01-01T12:06:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!aabbcc02",
+    "payload": "{\"sender\":\"!aabbcc02\",\"type\":\"telemetry\",\"payload\":{\"battery_level\":0,\"voltage\":0,\"channel_utilization\":0,\"air_util_tx\":0,\"uptime_seconds\":0},\"timestamp\":0,\"id\":1008}",
+    "payload_data": {
+      "sender": "!aabbcc02",
+      "type": "telemetry",
+      "payload": {
+        "battery_level": 0,
+        "voltage": 0,
+        "channel_utilization": 0,
+        "air_util_tx": 0,
+        "uptime_seconds": 0
+      },
+      "timestamp": 0,
+      "id": 1008
+    },
+    "received_at": "2026-01-01T12:07:00Z",
+    "_nota_sintetica": "timestamp=0 proposital, simula no sem relogio/GPS sincronizado"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!aabbcc02",
+    "payload": "{\"sender\":\"!aabbcc02\",\"type\":\"env_metrics\",\"payload\":{\"temperature\":532.7,\"relative_humidity\":61.0},\"timestamp\":1767269280,\"id\":1009}",
+    "payload_data": {
+      "sender": "!aabbcc02",
+      "type": "env_metrics",
+      "payload": {
+        "temperature": 532.7,
+        "relative_humidity": 61.0
+      },
+      "timestamp": 1767269280,
+      "id": 1009
+    },
+    "received_at": "2026-01-01T12:08:00Z",
+    "_nota_sintetica": "temperatura fora da faixa fisica plausivel, proposital para testar validacao"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!aabbcc02",
+    "payload": "{\"sender\":\"!aabbcc02\",\"type\":\"telemetry\",\"payload\":{truncated_json",
+    "payload_data": null,
+    "received_at": "2026-01-01T12:09:00Z",
+    "_nota_sintetica": "payload malformado (JSON truncado), payload_data nao pode ser interpretado"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!aabbcc02",
+    "payload": "{\"sender\":\"!aabbcc02\",\"type\":\"telemetry\",\"payload\":{\"battery_level\":63,\"voltage\":3.88,\"channel_utilization\":10.4,\"air_util_tx\":2.0,\"uptime_seconds\":86400},\"timestamp\":1767269340,\"id\":1010}",
+    "payload_data": {
+      "sender": "!aabbcc02",
+      "type": "telemetry",
+      "payload": {
+        "battery_level": 63,
+        "voltage": 3.88,
+        "channel_utilization": 10.4,
+        "air_util_tx": 2.0,
+        "uptime_seconds": 86400
+      },
+      "timestamp": 1767269340,
+      "id": 1010
+    },
+    "received_at": "2026-01-01T12:10:00Z"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!dht11001",
+    "payload": "{\"sender\":\"!dht11001\",\"type\":\"text\",\"payload\":{\"t\":21,\"u\":15},\"timestamp\":1767269400,\"id\":1011}",
+    "payload_data": {
+      "sender": "!dht11001",
+      "type": "text",
+      "payload": {
+        "t": 21,
+        "u": 15
+      },
+      "timestamp": 1767269400,
+      "id": 1011
+    },
+    "received_at": "2026-01-01T12:11:00Z",
+    "_nota_sintetica": "classe DHT11: tipo 'text' mas payload traz leitura compacta {t,u} (temperatura/umidade)"
+  },
+  {
+    "topic": "msh/US/2/json/LongFast/!dht11001",
+    "payload": "{\"sender\":\"!dht11001\",\"type\":\"text\",\"payload\":{\"t\":22,\"u\":17},\"timestamp\":1767269460,\"id\":1012}",
+    "payload_data": {
+      "sender": "!dht11001",
+      "type": "text",
+      "payload": {
+        "t": 22,
+        "u": 17
+      },
+      "timestamp": 1767269460,
+      "id": 1012
+    },
+    "received_at": "2026-01-01T12:12:00Z",
+    "_nota_sintetica": "segunda leitura classe DHT11 {t,u}, sender diferente dos demais testes para nao colidir em dedupe"
+  }
+]

@@ -1,0 +1,5 @@
+pymongo
+pymysql
+redis
+python-dotenv
+pytest
